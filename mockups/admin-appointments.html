@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="mk" data-bs-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Управување со термини · DentaPlus</title>
+<link rel="icon" href="img/favicon.svg">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="assets/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="info-strip d-none d-md-block"><div class="container d-flex justify-content-between py-1"><span><i class="bi bi-clock me-1"></i>Пон–Пет 08–20 · Саб 08–14</span><span><i class="bi bi-geo-alt me-1"></i>ул. Илинденска 1, Скопје · <a href="#"><i class="bi bi-telephone me-1"></i>02 3100 100</a></span></div></div>
+<nav class="navbar navbar-expand-lg dp-nav py-2"><div class="container">
+<a class="navbar-brand dp-brand" href="index.html"><img src="img/favicon.svg" alt=""> Denta<span>Plus</span></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="nav"><ul class="navbar-nav mx-auto gap-1"><li class="nav-item"><a class="nav-link" href="index.html">Почетна</a></li><li class="nav-item"><a class="nav-link" href="services.html">Услуги и цени</a></li><li class="nav-item"><a class="nav-link" href="dentists.html">Стоматолози</a></li><li class="nav-item"><a class="nav-link" href="search.html">Пребарување</a></li><li class="nav-item"><a class="nav-link" href="reviews.html">Рецензии</a></li><li class="nav-item"><a class="nav-link" href="admin-appointments.html"><i class="bi bi-calendar2-check me-1"></i>Термини</a></li></ul><div class="d-flex align-items-lg-center gap-2"><div class="dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><span class="avatar avatar-sm me-1">AD</span>admin</a><ul class="dropdown-menu dropdown-menu-end"><li><a class="dropdown-item" href="admin-appointments.html">Управување со термини</a></li><li><a class="dropdown-item" href="dentist-form.html">Нов стоматолог</a></li><li><a class="dropdown-item" href="users.html">Пациенти и корисници</a></li><li><a class="dropdown-item" href="dashboard.html">Статистика</a></li><li><a class="dropdown-item" href="db.html">База (/db)</a></li><li><a class="dropdown-item" href="history.html">Историја</a></li><li><hr class="dropdown-divider"></li><li><a class="dropdown-item" href="index.html">Одјава</a></li></ul></div></div></div>
+</div></nav>
+<main class="container py-4">
+<div class="page-head"><div class="d-flex flex-wrap justify-content-between align-items-end gap-3"><div><span class="kicker">Ординација</span><h1>Управување со термини</h1><p>Потврдете, завршете или откажете термини.</p></div><div class="d-flex gap-2"><button class="btn btn-light"><i class="bi bi-filetype-csv me-1"></i>CSV извештај</button></div></div></div>
+<div class="soft p-3 mb-4"><div class="row g-2"><div class="col-md-4"><div class="input-group"><button class="btn btn-light">‹</button><input type="date" class="form-control" value="2026-10-23"><button class="btn btn-light">›</button></div></div><div class="col-md-3"><select class="form-select"><option>Сите статуси</option></select></div><div class="col-md-3"><select class="form-select"><option>Сите стоматолози</option></select></div></div></div><div class="card mb-3"><div class="card-body appt"><div class="appt-date"><small>окт</small><b>23</b></div><div class="flex-grow-1"><div class="d-flex flex-wrap justify-content-between gap-2"><a href="appointment-details.html" class="fw-bold text-reset">Композитна пломба</a><span class="status-pill status-pending"><i class="bi bi-hourglass-split"></i>Чека потврда</span></div><div class="small text-muted">д-р Елена Николовска · Марија Стојанова · 10:30</div><div class="mt-2 d-flex gap-2"><button class="btn btn-sm btn-primary">Потврди</button><button class="btn btn-sm btn-outline-danger">Откажи</button></div></div></div></div><div class="card mb-3"><div class="card-body appt"><div class="appt-date"><small>окт</small><b>23</b></div><div class="flex-grow-1"><div class="d-flex flex-wrap justify-content-between gap-2"><a href="appointment-details.html" class="fw-bold text-reset">Вадење на умник</a><span class="status-pill status-confirmed"><i class="bi bi-check2-circle"></i>Потврден</span></div><div class="small text-muted">д-р Марко Ристевски · Горан Јовановски · 12:00</div><div class="mt-2 d-flex gap-2"><button class="btn btn-sm btn-soft">Заврши + картон</button><button class="btn btn-sm btn-outline-danger">Откажи</button></div></div></div></div>
+<div class="soft mt-5 p-3 mock-desc small"><span class="kicker mb-2"><i class="bi bi-info-circle"></i>Опис на екранот (маска – Дел 1)</span><ul class="mb-0 mt-2"><li>Сите термини со филтри (ден, статус, стоматолог) и страничење.</li><li>Потврди → е-пошта до пациентот. Заврши → popup каде се внесуваат интервенции во картонот.</li><li>CSV извештај за избраните филтри.</li></ul></div>
+</main>
+<footer class="dp-footer py-4"><div class="container small d-flex flex-wrap justify-content-between gap-2"><span>&copy; 2026 DentaPlus · Веб програмирање</span><span>Празници: Nager.Date API · REST API (Swagger)</span></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

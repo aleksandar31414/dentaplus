@@ -1,0 +1,20 @@
+# Render.com blueprint (production). Database: MongoDB Atlas (set MONGODB_ATLAS_URI in the dashboard).
+services:
+  - type: web
+    name: dentaplus
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: TZ
+        value: Europe/Skopje
+      - key: MONGODB_ATLAS_URI
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: APP_URL
+        value: https://dentaplus.onrender.com
+      - key: SEED_ON_START
+        value: "true"

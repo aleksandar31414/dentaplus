@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="mk" data-bs-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Детали за услуга · DentaPlus</title>
+<link rel="icon" href="img/favicon.svg">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="assets/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="info-strip d-none d-md-block"><div class="container d-flex justify-content-between py-1"><span><i class="bi bi-clock me-1"></i>Пон–Пет 08–20 · Саб 08–14</span><span><i class="bi bi-geo-alt me-1"></i>ул. Илинденска 1, Скопје · <a href="#"><i class="bi bi-telephone me-1"></i>02 3100 100</a></span></div></div>
+<nav class="navbar navbar-expand-lg dp-nav py-2"><div class="container">
+<a class="navbar-brand dp-brand" href="index.html"><img src="img/favicon.svg" alt=""> Denta<span>Plus</span></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="nav"><ul class="navbar-nav mx-auto gap-1"><li class="nav-item"><a class="nav-link" href="index.html">Почетна</a></li><li class="nav-item"><a class="nav-link active" href="services.html">Услуги и цени</a></li><li class="nav-item"><a class="nav-link" href="dentists.html">Стоматолози</a></li><li class="nav-item"><a class="nav-link" href="search.html">Пребарување</a></li><li class="nav-item"><a class="nav-link" href="reviews.html">Рецензии</a></li><li class="nav-item"><a class="nav-link" href="admin-appointments.html"><i class="bi bi-calendar2-check me-1"></i>Термини</a></li></ul><div class="d-flex align-items-lg-center gap-2"><div class="dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><span class="avatar avatar-sm me-1">AD</span>admin</a><ul class="dropdown-menu dropdown-menu-end"><li><a class="dropdown-item" href="admin-appointments.html">Управување со термини</a></li><li><a class="dropdown-item" href="dentist-form.html">Нов стоматолог</a></li><li><a class="dropdown-item" href="users.html">Пациенти и корисници</a></li><li><a class="dropdown-item" href="dashboard.html">Статистика</a></li><li><a class="dropdown-item" href="db.html">База (/db)</a></li><li><a class="dropdown-item" href="history.html">Историја</a></li><li><hr class="dropdown-divider"></li><li><a class="dropdown-item" href="index.html">Одјава</a></li></ul></div></div></div>
+</div></nav>
+<main class="container py-4">
+<div class="page-head"><nav><ol class="breadcrumb small mb-2"><li class="breadcrumb-item"><a href="services.html">Услуги</a></li><li class="breadcrumb-item active">Лекување на канал</li></ol></nav><div class="d-flex flex-wrap justify-content-between align-items-end gap-3"><div><span class="kicker">Пломби и канали</span><h1>Лекување на канал</h1></div><div class="d-flex gap-2"><button class="btn btn-light"><i class="bi bi-pencil me-1"></i>Уреди</button><button class="btn btn-outline-danger"><i class="bi bi-trash me-1"></i>Избриши</button></div></div></div>
+<div class="row g-4"><div class="col-lg-8"><div class="card"><div class="card-body p-4"><span class="svc-icon mb-3" style="background:#e7eefc;color:#2f5bd3"><i class="bi bi-bandaid"></i></span><p class="lead">Ендодонтски третман на воспалена пулпа, со локална анестезија и контролна снимка.</p></div></div></div>
+<div class="col-lg-4"><div class="card"><div class="card-body p-4"><div class="text-muted small">Цена</div><div class="price fs-2 mb-3">6.000 ден.</div><div class="d-flex justify-content-between border-top py-2"><span class="text-muted">Траење</span><strong>1 ч 30 мин</strong></div><div class="d-flex justify-content-between border-top py-2"><span class="text-muted">Закажана</span><strong>14 пати</strong></div><a href="book.html" class="btn btn-primary w-100 mt-3">Закажи термин</a></div></div></div></div>
+<div class="modal-demo mt-4"><div class="modal-content bg-white mx-auto p-4" style="max-width:560px"><h5>Уреди: Лекување на канал</h5><div class="row g-3 mt-1"><div class="col-12"><label class="form-label">Име</label><input class="form-control" value="Лекување на канал"></div><div class="col-6"><label class="form-label">Цена (ден.)</label><input class="form-control" value="6000"></div><div class="col-6"><label class="form-label">Траење</label><select class="form-select"><option>1 ч 30 мин</option></select></div></div><div class="text-end mt-3"><button class="btn btn-light">Откажи</button> <button class="btn btn-primary">Зачувај</button></div></div></div>
+
+<div class="soft mt-5 p-3 mock-desc small"><span class="kicker mb-2"><i class="bi bi-info-circle"></i>Опис на екранот (маска – Дел 1)</span><ul class="mb-0 mt-2"><li>Детали за услуга: опис, цена, траење, колку пати е закажана.</li><li>Админ: уредување во popup (модал) и бришење со потврда. Ако услугата е користена – серверот одбива (409).</li></ul></div>
+</main>
+<footer class="dp-footer py-4"><div class="container small d-flex flex-wrap justify-content-between gap-2"><span>&copy; 2026 DentaPlus · Веб програмирање</span><span>Празници: Nager.Date API · REST API (Swagger)</span></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
